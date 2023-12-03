@@ -32,7 +32,7 @@ def get_metrics(y_true, y_pred, tag:str):
 
 def evluate():
     models_path = Path("models")
-    interim_path = interim_path = Path("data/interim")
+    interim_path = interim_path = Path("benchmark/data")
 
     model1 = joblib.load(models_path / "model_2080.pkl")
     model2 = joblib.load(models_path / "model_disjoint.pkl")
